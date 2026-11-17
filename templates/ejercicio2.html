@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Indica que el documento utiliza HTML5. -->
+<html lang="es"> <!-- Inicia el documento HTML en espanol. -->
+<head> <!-- Inicia la cabecera de la pagina. -->
+    <meta charset="UTF-8"> <!-- Define la codificacion de caracteres. -->
+    <title>Ejercicio 2</title> <!-- Define el titulo de la pestana. -->
+    <link rel="stylesheet" href="/static/css/estilos.css"> <!-- Conecta la pagina con el archivo CSS. -->
+</head> <!-- Cierra la cabecera. -->
+<body> <!-- Inicia el contenido visible. -->
+
+    <form method="POST"> <!-- Crea el formulario que enviara los nombres mediante POST. -->
+        <h1>Formulario de Nombres</h1> <!-- Muestra el titulo del formulario. -->
+
+        <label>Nombre 1:</label> <!-- Identifica el primer nombre. -->
+        <input type="text" name="nombre1" required> <!-- Permite ingresar el primer nombre. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <label>Nombre 2:</label> <!-- Identifica el segundo nombre. -->
+        <input type="text" name="nombre2" required> <!-- Permite ingresar el segundo nombre. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <label>Nombre 3:</label> <!-- Identifica el tercer nombre. -->
+        <input type="text" name="nombre3" required> <!-- Permite ingresar el tercer nombre. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <input type="submit" value="Enviar"> <!-- Crea el boton para enviar los nombres. -->
+    </form> <!-- Cierra el formulario. -->
+{% if error %} <!-- Comprueba si Python envio un mensaje de error. -->
+    <p>{{ error }}</p> <!-- Muestra el aviso cuando existen nombres repetidos. -->
+{% endif %} <!-- Finaliza la condicion del mensaje de error. -->
+    {% if nombre_mayor %} <!-- Comprueba si Python envio el nombre mas largo. -->
+        <p>El nombre mas largo es: {{ nombre_mayor }}</p> <!-- Muestra el nombre seleccionado por Python. -->
+        <p>Cantidad de caracteres: {{ cantidad }}</p> <!-- Muestra la cantidad de caracteres del nombre. -->
+    {% endif %} <!-- Finaliza la condicion de Jinja2. -->
+
+</body> <!-- Cierra el contenido visible. -->
+</html> <!-- Finaliza el documento HTML. -->

@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Indica que el documento utiliza HTML5. -->
+<html lang="es"> <!-- Inicia el documento HTML. -->
+<head> <!-- Inicia la cabecera. -->
+    <meta charset="UTF-8"> <!-- Define la codificacion de caracteres. -->
+    <title>Ejercicio 1</title> <!-- Define el titulo de la pestana. -->
+    <link rel="stylesheet" href="/static/css/estilos.css"> <!-- Conecta el archivo CSS. -->
+</head> <!-- Cierra la cabecera. -->
+<body> <!-- Inicia el contenido visible. -->
+
+    <form method="POST"> <!-- Crea un formulario que envia datos mediante POST. -->
+            <h1>Formulario de Notas</h1> <!-- Muestra el titulo del formulario. -->
+
+        <label>Nota 1:</label> <!-- Identifica la primera nota. -->
+        <input type="number" name="nota1" min="10" max="70" required> <!-- Permite ingresar la primera nota. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <label>Nota 2:</label> <!-- Identifica la segunda nota. -->
+        <input type="number" name="nota2" min="10" max="70" required> <!-- Permite ingresar la segunda nota. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <label>Nota 3:</label> <!-- Identifica la tercera nota. -->
+        <input type="number" name="nota3" min="10" max="70" required> <!-- Permite ingresar la tercera nota. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <label>Asistencia (%):</label> <!-- Identifica el porcentaje de asistencia. -->
+        <input type="number" name="asistencia" min="0" max="100" required> <!-- Permite ingresar la asistencia. -->
+        <br> <!-- Agrega un salto de linea. -->
+
+        <input type="submit" value="Enviar"> <!-- Crea el boton para enviar los datos. -->
+    </form> <!-- Cierra el formulario. -->
+{% if estado %} <!-- Comprueba si Python envio el estado del estudiante. -->
+    <p>El promedio es {{ promedio }}</p> <!-- Muestra el promedio calculado en Python. -->
+    <p>El estado del estudiante es: {{ estado }}</p> <!-- Muestra si el estudiante aprobo o reprobo. -->
+{% endif %} <!-- Finaliza la condicion de Jinja2. -->
+</body> <!-- Cierra el contenido visible. -->
+</html> <!-- Finaliza el documento HTML. -->

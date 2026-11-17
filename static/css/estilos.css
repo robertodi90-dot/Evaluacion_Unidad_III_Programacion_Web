@@ -1,0 +1,60 @@
+body { /* Define el estilo general de la pagina. */
+    font-family: Arial, sans-serif; /* Establece el tipo de letra. */
+    background-color: #f4f4f4; /* Aplica un fondo gris claro. */
+    text-align: center; /* Centra el contenido de texto. */
+    margin: 0; /* Elimina los margenes exteriores. */
+    padding: 40px; /* Agrega espacio alrededor del contenido. */
+}
+
+h1 { /* Define el estilo del titulo principal. */
+    margin-bottom: 35px; /* Separa el titulo de los botones. */
+    font-size: 24px; /* Establece un tamano menor para los titulos. */
+}
+
+a { /* Define la apariencia de los enlaces. */
+    display: block; /* Muestra cada enlace en una linea diferente. */
+    width: 220px; /* Establece el ancho del enlace. */
+    margin: 20px auto; /* Separa y centra los enlaces. */
+    padding: 20px; /* Agrega espacio dentro de cada enlace. */
+    background-color: #007bff; /* Aplica un fondo azul. */
+    color: white; /* Establece el texto en blanco. */
+    text-decoration: none; /* Elimina el subrayado del enlace. */
+    border-radius: 10px; /* Redondea las esquinas. */
+    font-size: 24px; /* Establece el tamano del texto. */
+}
+
+a:hover { /* Aplica un estilo al pasar el cursor sobre el enlace. */
+    background-color: #0056b3; /* Oscurece el fondo azul. */
+}
+
+form { /* Define la presentacion del formulario. */
+    width: 320px; /* Establece el ancho del formulario. */
+    margin: 0 auto; /* Centra el formulario en la pagina. */
+    padding: 20px; /* Agrega espacio dentro del formulario. */
+    background-color: white; /* Establece un fondo blanco. */
+    border-radius: 8px; /* Redondea las esquinas. */
+    box-shadow: 0 2px 8px #cccccc; /* Agrega una sombra al formulario. */
+    text-align: left; /* Alinea el contenido a la izquierda. */
+}
+
+label { /* Define la presentacion de los textos de los campos. */
+    display: block; /* Coloca cada etiqueta en una linea. */
+    margin-top: 10px; /* Agrega separacion sobre cada etiqueta. */
+}
+
+input[type="number"], input[type="text"] { /* Aplica los estilos a los campos numericos y de texto. */
+    width: 100%; /* Ocupa todo el ancho disponible. */
+    padding: 10px; /* Agrega espacio dentro del campo. */
+    box-sizing: border-box; /* Mantiene el ancho incluyendo el espacio interior. */
+    border: 1px solid #ccc; /* Agrega un borde gris. */
+    border-radius: 3px; /* Redondea ligeramente las esquinas. */
+}
+
+input[type="submit"] { /* Define la presentacion del boton Enviar. */
+    background-color: #007bff; /* Aplica un fondo azul. */
+    color: white; /* Establece el texto en blanco. */
+    border: none; /* Elimina el borde del boton. */
+    padding: 10px 20px; /* Agrega espacio dentro del boton. */
+    border-radius: 3px; /* Redondea las esquinas. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el boton. */
+}
